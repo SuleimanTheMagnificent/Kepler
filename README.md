@@ -1,2 +1,2 @@
 # Kepler
-An IDE written in the C programming language
+A Marginally Efficient IDE written in C.
