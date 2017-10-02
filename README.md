@@ -1,7 +1,7 @@
 # Kepler
 *A Marginally Efficient IDE written in C.*
 
-##About
+## About
 **Kepler** IDE is a project to create a full-featured  IDE entirely written in C.
 It will use the *GTK* toolkit to accomplish this.
 
