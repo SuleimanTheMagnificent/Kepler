@@ -5,22 +5,54 @@
     <link rel="stylesheet" type="text/css" src="index.css"/>
     <style>
 @keyframes title-color-transition {
-  from {
+  0% {
+    color: #3c8e4b;
     border-top-color: #356598;
     border-bottom-color: #516f8d;
     border-left-color: #2a6099;
     border-right-color: #2d7283;
-    color: #2d7283;
-    background-color: #9cb39e;
   }
-  to {
+  20% {
+    color: #3f8957;
     border-top-color: #487c72;
     border-bottom-color: #4c7580;
     border-left-color: #516f8d;
     border-right-color: #576287;
-    color: #487c72;
-    background-color: #c9c3b8;
+    }
+  40% {
+    color: #477e6e;
+    border-top-color: #356598;
+    border-bottom-color: #516f8d;
+    border-left-color: #2a6099;
+    border-right-color: #2d7283;
   }
+  60% {
+    color: #4a7879;
+    color: #3f8957;
+    border-top-color: #487c72;
+    border-bottom-color: #4c7580;
+    border-left-color: #516f8d;
+    border-right-color: #576287;
+  }
+  80% {
+    color: #4e7383;
+    border-top-color: #356598;
+    border-bottom-color: #516f8d;
+    border-left-color: #2a6099;
+    border-right-color: #2d7283;
+  }
+  100% {
+    color: #566688;
+    border-top-color: #487c72;
+    border-bottom-color: #4c7580;
+    border-left-color: #516f8d;
+    border-right-color: #576287;
+  }
+}
+body {
+    animation-name: title-color-transition;
+    animation-duration: 3s;
+    animation-iteration-count: 9999999999999999;
 }
 #main-text {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
@@ -30,9 +62,9 @@
 	text-align: center;
     border-top-style: double;
     border-bottom-style: double;
-    border-left-style: groove;
-    border-right-style: groove;
-    border-width: 5px;
+    border-left-style: double;
+    border-right-style: double;
+    border-width: 7px;
     border-top-color: #356598;
     border-bottom-color: #356598;
     border-left-color: #516f8d;
@@ -47,9 +79,6 @@
   border-width: 3px;
   border-style: inset;
 }
-#final {
-  width: 360px;
-}
 #subtitle {
   text-align: center;
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
@@ -59,7 +88,16 @@ p {
   font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 }
 button {
-  width: 340px;
+  width: 315px;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  background-color: #7FFFD4;
+  animation-name: title-color-transition;
+  animation-duration: 3s;
+  animation-iteration-count: 9999999999999999;
+  border-style: groove;
+}
+button:hover {
+  text-decoration: underline;
 }
 li {
   text-align: left;
@@ -70,10 +108,10 @@ li:hover {
   list-style: square outside;
 }
 #contact-list {
-  margin-left: 650px;
+  margin-left: 600px;
 }
 #about-list {
-  margin-left: 600px;
+  margin-left: 500px;
 }
     </style>
   </head>
@@ -118,4 +156,4 @@ li:hover {
       <p>Github: <a href="https://github.com/SuleimanTheMagnificent/Kepler">https://github.com/SuleimanTheMagnificent/Kepler</a></p>
     </div>
   </body>
-</html>
+</html
