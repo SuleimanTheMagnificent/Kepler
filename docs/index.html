@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Kepler: A Marginally Inefficient IDE</title>
-    <link rel="stylesheet" type="text/css" src="index.css"/>
+    <script>function goTo(id) {document.getElementById(id).scrollIntoView();}</script>
     <style>
 @keyframes title-color-transition {
   0% {
@@ -117,10 +117,10 @@ li:hover {
   </head>
   <body>
     <div id="button-bar">
-      <button><i>News</i>
-      <button><i>About</i>
-      <button><i>Contact</i>
-      <button id="final">FAQ
+      <button onclick="goTo('news')"><i>News</i>
+      <button onclick="goTo('about')"><i>About</i>
+      <button onclick="goTo('contact')"><i>Contact</i>
+      <button onclick="goTo('faq')" id="final">FAQ
     </div>
     <div id="title">
       <h1 id="main-text">Kepler</h1>
@@ -144,6 +144,10 @@ li:hover {
     <div id="news">
       <p>Nothing here yet!</p>
     </div>
+    <h4 id="subtitle">FAQ</h4>
+    <div id="faq">
+      <p>Nothing here yet!
+    </div>
     <h4 id="subtitle">Contact</h4>
      <div id="contact-list">
       <li>Ideas?</li>
@@ -155,4 +159,4 @@ li:hover {
       <p>Github: <a href="https://github.com/SuleimanTheMagnificent/Kepler">https://github.com/SuleimanTheMagnificent/Kepler</a></p>
     </div>
   </body>
-</html>
+</html
