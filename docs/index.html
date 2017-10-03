@@ -49,6 +49,17 @@
     border-right-color: #576287;
   }
 }
+@keyframes subtitle-bgcolor-transition {
+    0% {
+      backround-color: lightpurple;
+    }
+    from {
+      background-color: Aquamarine;
+    }
+    to {
+      background-color: lightblue;
+    }
+}
 body {
     animation-name: title-color-transition;
     animation-duration: 3s;
@@ -56,10 +67,14 @@ body {
 }
 #main-text {
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    border-radius: 15px;
+    background-color: lightgrey;
+    margin-left: 590px;
+    margin-right: 590px;
 }
 #title {
     margin-top: 30px;
-	text-align: center;
+    text-align: center;
     border-top-style: double;
     border-bottom-style: double;
     border-left-style: double;
@@ -81,7 +96,20 @@ body {
 }
 #subtitle {
   text-align: center;
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  animation-name: subtitle-bgcolor-transition;
+  animation-duration: 3s;
+  animation-iteration-count: 9999999999;
+  margin-left: 620px;
+  margin-right: 620px;
+  border-radius: 15px;
+  -webkit-transition: -ms-transform 1s, -webkit-transform 1s;
+  transition: -ms-transform 1s, -webkit-transform 1s;
+}
+#subtitle:hover {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 p {
   text-align: center;
@@ -109,9 +137,13 @@ li:hover {
 }
 #contact-list {
   margin-left: 600px;
+  margin-right: 600px;
+  border-style: double;
 }
 #about-list {
-  margin-left: 500px;
+  margin-left: 400px;
+  margin-right: 380px;
+  border-style: double;
 }
     </style>
   </head>
@@ -124,7 +156,7 @@ li:hover {
     </div>
     <div id="title">
       <h1 id="main-text">Kepler</h1>
-      <h3><i>A Marginally Inefficient IDE.</i></h3>
+      <h3 style="border-radius: 15px; background-color: lightgrey; margin-left: 540px; margin-right: 540px;"><i>A Marginally Inefficient IDE.</i></h3>
     </div>
     <h4 id="subtitle">About</h4>
     <div id="about">
@@ -159,4 +191,4 @@ li:hover {
       <p>Github: <a href="https://github.com/SuleimanTheMagnificent/Kepler">https://github.com/SuleimanTheMagnificent/Kepler</a></p>
     </div>
   </body>
-</html
+</html>
